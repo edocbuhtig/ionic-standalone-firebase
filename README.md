@@ -1,6 +1,6 @@
 # Ionic Angular (Standalone)  Firebase/Firestore CRUD 
 
-## This was just a POC built for a Spanish Client
+ ["This was just a POC built for a Spanish Client"]
 SETUP
 - (git clone )
 -  Run (npm i --legacy-peer-deps )
