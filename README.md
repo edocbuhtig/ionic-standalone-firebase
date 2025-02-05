@@ -2,7 +2,7 @@
 
 ## This was just a POC built for a Spanish Client
 SETUP
--
+- (git clone )
 -  Run (npm i --legacy-peer-deps )
 
 -  Make sure to update firestore (Rules) for read write permissions
