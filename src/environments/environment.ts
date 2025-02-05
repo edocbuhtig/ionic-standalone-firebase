@@ -7,7 +7,7 @@ export const environment = {
   firebase: {
 
     apiKey: "",
-  authDomain: "",
+  authDomain: "", 
   
   messagingSenderId: "",
   appId: ""
