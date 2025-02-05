@@ -1,0 +1,85 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Ionic Standalone Firebase/Firestore  CRUD
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Ionic Standalone Firebase/Firestore  CRUD</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-card>
+
+    <ion-item>
+      <ion-label>Name</ion-label>
+      <ion-input [(ngModel)]="newUser.name"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Age</ion-label>
+      <ion-input [(ngModel)]="newUser.age"></ion-input>
+    </ion-item>
+
+
+  </ion-card>
+
+
+
+
+  <div style="margin: 20px;">
+
+    <ion-button (click)="save()" expand="block" shape="round" color="primary">
+      Save
+    </ion-button>
+
+  </div>
+
+
+
+  @if (cargando) {
+    <div style="text-align: center;">
+      <ion-spinner name="bubbles"></ion-spinner>
+    </div>
+  }
+
+  
+    <ion-list>
+      @for (user of users; track $index) {
+        <ion-item>
+          <ion-label>
+            Name: {{user.name}}
+            <p>Age: {{user.age}}</p>
+          </ion-label>
+          <ion-buttons slot="end">
+
+            <ion-button (click)="edit(user)">
+              <ion-icon slot="icon-only" name="create" color="primary"></ion-icon>
+            </ion-button>
+
+            <ion-button (click)="delete(user)">
+              <ion-icon slot="icon-only" name="trash" color="danger"></ion-icon>
+            </ion-button>
+          </ion-buttons>
+        </ion-item>
+      }
+    </ion-list>
+
+
+    @if (user) {
+      
+      <!-- <ion-item>
+        <ion-label>
+          name: {{user.name}}
+          <p>age: {{user.age}}</p>
+        </ion-label>
+      </ion-item> -->
+    }
+
+
+
+</ion-content>
