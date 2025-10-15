@@ -7,15 +7,14 @@ import { IoniconsModule } from '../common/modules/ionicons.module';
 
 
 @Component({
-  selector: 'app-home',
-  templateUrl: 'home.page.html',
-  styleUrls: ['home.page.scss'],
-  standalone: true,
-  imports: [IonImg, IonList, IonLabel, IonHeader, IonToolbar, IonTitle, IonContent, IonList, IonItem, IonInput,
-    IonIcon, IonButton, IonButtons, IonSpinner, IonInput, IonCard, 
-    FormsModule,
-    IoniconsModule
-  ],
+    selector: 'app-home',
+    templateUrl: 'home.page.html',
+    styleUrls: ['home.page.scss'],
+    imports: [IonImg, IonList, IonLabel, IonHeader, IonToolbar, IonTitle, IonContent, IonList, IonItem, IonInput,
+        IonIcon, IonButton, IonButtons, IonSpinner, IonInput, IonCard,
+        FormsModule,
+        IoniconsModule
+    ]
 })
 export class HomePage {
 
