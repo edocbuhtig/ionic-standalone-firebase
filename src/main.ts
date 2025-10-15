@@ -23,6 +23,6 @@ bootstrapApplication(AppComponent, {
     importProvidersFrom(provideFirebaseApp(() => initializeApp(environment.firebase))),
     importProvidersFrom(provideAuth(() => getAuth())), 
     importProvidersFrom(provideFirestore(() => getFirestore())), 
-    importProvidersFrom(provideStorage(() => getStorage())), provideFirebaseApp(() => initializeApp({"projectId":"auth-test-56cd5","appId":"1:506592817583:web:660b8fab0252596de1ff5a","databaseURL":"https://auth-test-56cd5-default-rtdb.firebaseio.com","storageBucket":"auth-test-56cd5.firebasestorage.app","apiKey":"AIzaSyAmEsRFZZ2kGcWhh4v5I44WGk6_Ivt8ikc","authDomain":"auth-test-56cd5.firebaseapp.com","messagingSenderId":"506592817583"})), provideFirestore(() => getFirestore()),
+    importProvidersFrom(provideStorage(() => getStorage())),
   ],
 });
